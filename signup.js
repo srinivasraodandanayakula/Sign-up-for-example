@@ -1,4 +1,4 @@
-var a=document.getElementById("firstname").value;
+var a=document.getElementById("Firstname").value;
 var b=document.getElementById("Email").value;
 var c=document.getElementById("Workphone").value;
 var d=document.getElementById("Homephone").value;
