@@ -21,6 +21,7 @@
 
              outline: none;
             transition: .2s;
+            
         }
 
     </style>
@@ -30,80 +31,81 @@
     <h1> SIGNING UP FOR EXAMPLE</h1>
 <form>
     <div>
-        <label for="name "> Full Name*  :</label>
-        <input type="text"  name ="first name " id= "first name " placeholder="first name" required>
-        <input type="text" name ="last name " id=" last name" placeholder="last name" required>
+        <label for="Fullname"> Full Name*  :</label>
+        <input type="text"  name ="firstname" id="firstname" placeholder="first name" required>
+        <input type="text" name ="lastname" id="lastname" placeholder="last name" required>
+    </div>
+    <div>
+        <label for="Organization"> Organization  :</label>
+        <input type="text" name="Organization" id ="Organization" >
 
     </div>
     <div>
-        <label for="organization "> Organization  :</label>
-        <input type="text" name="organization" >
 
-    </div>
-    <div>
-
-        <label for="email"> Email Address*  :</label>
-        <input type="email" name = "email " id="email" required>
+        <label for="Email"> Email Address*  :</label>
+        <input type="email" name ="Email" id="Email" required>
 
   </div>
   <div>
-      <label for="work phone"> Work Phone* :  </label>
-      <input type="tel" name="work phone" required >
+      <label for="Workphone"> Work Phone* :  </label>
+      <input type="tel" name="Workphone" id ="Workphone" required  >
   </div>
   <div>
-      <label for="home phone"> Home Phone* :</label>
-      <input type="tel" name="home phone" required >
+      <label for="Homephone"> Home Phone* :</label>
+      <input type="tel" name="Homephone" id="Homephone" required >
 
   </div>
   <div>
-      <label for="personal phone"> Personal Phone  :</label>
-      <input type=" tel" name=" personal phone">
+      <label for="Personalphone"> Personal Phone  :</label>
+      <input type="tel" name="Personalphone" id ="Personalnumber">
    </div>
    <div>
-       <label for="fax"> Fax  :</label>
-       <input type="number" name="fax"> 
+       <label for="Fax"> Fax  :</label>
+       <input type="number" name="Fax" id ="Fax"> 
 
   
     </div>
     <div>
-        <label for="work address"> Work Address*  :</label>
-        <input type=" address" name="work address" required >
+        <label for="Workaddress"> Work Address*  :</label>
+        <input type="address" name="Workaddress" id="Workaddress" required >
 
     </div>
     <div>
-        <label for="home address"> Home Address*  :</label>
-        <input type=" address" name="home address" required>
+        <label for="Homeaddress"> Home Address*  :</label>
+        <input type="address" name="Homeaddress" id="Homeaddress" required>
     </div>
 
     <div>
-        <label for="nationality"> Nationality  :</label>
-        <input type="text" name="nationality" >
+        <label for="Nationality"> Nationality  :</label>
+        <input type="text" name="Nationality" id="Nationality" >
     </div>
     <div>
-        <label for="state"> State  :</label>
-        <input type="text" name="state">
+        <label for="State"> State  :</label>
+        <input type="text" name="State" id="State">
 
     </div>
     <div>
-        <label for="district"> District</label>
-        <input type="text" name="district" >
+        <label for="District"> District</label>
+        <input type="text" name="District" id="District" >
 
     </div>
     <div>
-        <label for="city"> City*  :</label>
-        <input type="text" name="city" required>
+        <label for="City"> City*  :</label>
+        <input type="text" name="City"  id ="City" required>
 
     </div>
     <div>
-        <label for="postal code"> Postal Code  :</label>
-        <input type="number" name = "postal code">
+        <label for="Postalcode"> Postal Code  :</label>
+        <input type="number" name = "Postalcode" id ="Postalcode">
 
     </div>
     <div>
         <label >*-required fields</label>
 
-        <button type="submit"> Submit</button>
+        <button onclick="form()"> Submit</button> 
     </div>
 </form>    
+<script src="signup.js"></script>
+
 </body>
 </html>
