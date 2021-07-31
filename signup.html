@@ -29,7 +29,7 @@
 </head>
 <body>
     <h1> SIGNING UP FOR EXAMPLE</h1>
-<form>
+<form >
     <div>
         <label for="Fullname"> Full Name*  :</label>
         <input type="text"  name ="Firstname" id="Firstname" placeholder="First name" required>
@@ -48,13 +48,16 @@
   </div>
   <div>
       <label for="Workphone"> Work Phone* :  </label>
-      <input type="tel" name="Workphone" id ="Workphone" required  >
+      <input type="tel" name="Workphone" id="Workphone" required  >
+      
   </div>
+  <div id="Warning"></div>
   <div>
       <label for="Homephone"> Home Phone* :</label>
       <input type="tel" name="Homephone" id="Homephone" required >
-
+      
   </div>
+  <div id="Alert"></div>
   <div>
       <label for="Personalphone"> Personal Phone  :</label>
       <input type="tel" name="Personalphone" id ="Personalnumber">
@@ -68,6 +71,7 @@
     <div>
         <label for="Workaddress"> Work Address*  :</label>
         <input type="address" name="Workaddress" id="Workaddress" required >
+        
 
     </div>
     <div>
@@ -81,8 +85,8 @@
     </div>
     <div>
         <label for="State"> State  :</label>
-        <input type="text" name="State" id="State">
-
+        <input type="text" name="State" id="State"  >
+        
     </div>
     <div>
         <label for="District"> District</label>
@@ -90,8 +94,14 @@
 
     </div>
     <div>
-        <label for="City"> City*  :</label>
-        <input type="text" name="City"  id ="City" required>
+        <label for="City">City*  :</label>
+        <select id="City">
+        <option>Select City</option>
+        <option id="Hyderabad">Hyderabad</option>
+        <option id="Nizamabad">Nizamabad</option>
+        <option id="Adilabad">Adilabad</option>
+        <option id="Mancherial">Mancherial</option>
+        </select>
 
     </div>
     <div>
@@ -102,7 +112,7 @@
     <div>
         <label >*-required fields</label>
 
-        <button onclick="form()"> Submit</button> 
+        <button id="submit" onclick="abc()">Submit</button> 
     </div>
 </form>    
 <script src="signup.js"></script>
